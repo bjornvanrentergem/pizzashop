@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { OrderPage } from '../order/order';
+import { TabsPage } from '../tabs/tabs';
 
 @Component({
   selector: 'page-home',
@@ -9,6 +11,11 @@ export class HomePage {
 
   constructor(public navCtrl: NavController) {
 
+  }
+
+  order(){
+    console.log('Try to order');
+    this.navCtrl.setRoot(TabsPage);
   }
 
 }

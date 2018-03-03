@@ -1,17 +1,32 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Pizza Line</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+
+  <!--<img src="assets/img/logo.png" id="logo">-->
+
+  <ion-card>
+    <img src="assets/img/shop.jpg" />
+    <ion-card-content>
+      <ion-card-title color="danger">
+        Ciao a tutti!
+      </ion-card-title>
+
+      <p>
+        Pizza Line is the first full-fledged Belgian pizza concept where pizza sharing is central.</p>
+        <p>Characteristic and Belgian is the "beerish" character (about twenty beers in our range), pizza "with the Duvel inside" because of the use from
+        Duvel beer yeast for our pizza dough, and original toppings.
+      </p>
+    </ion-card-content>
+
+    <button ion-button icon-left full color="danger" (click)="order()" id="button">
+      <ion-icon name="card" float-left></ion-icon>
+      Order now!
+    </button>
+
+  </ion-card>
+
 </ion-content>
